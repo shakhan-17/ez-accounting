@@ -1,4 +1,16 @@
-# Logs
+# Dependencies
+/node_modules
+
+# Production builds
+/dist
+/dist-ssr
+
+# Supabase secrets & temp files
+supabase/.branches
+supabase/.temp
+supabase/functions/_realtime-dist
+
+# Log files
 logs
 *.log
 npm-debug.log*
@@ -7,9 +19,9 @@ yarn-error.log*
 pnpm-debug.log*
 lerna-debug.log*
 
-node_modules
-dist
-dist-ssr
+# Environment variables (VERY IMPORTANT)
+.env
+.env*
 *.local
 
 # Editor directories and files
